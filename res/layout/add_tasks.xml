@@ -12,5 +12,70 @@
             android:layout_gravity="left|center_vertical"
             android:autoText="false"
             android:singleLine="false"
-            android:hint="What must you do?"/>
+            android:hint="What is your task?"
+            android:padding="10dp"/>
+
+    <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Is your task a..."
+                android:id="@+id/textView"
+                android:layout_gravity="left|center_vertical"
+                android:padding="10dp"/>
+
+        <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Single Task?"
+                android:id="@+id/singleTask_radio"
+                android:layout_gravity="left|center_vertical"
+                android:padding="10dp"/>
+
+        <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Daily Task?"
+                android:id="@+id/dailyTask_radio"
+                android:layout_gravity="left|center_vertical"
+                android:padding="10dp"/>
+    </RadioGroup>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Will you do this..."
+            android:id="@+id/textView2"
+            android:layout_gravity="left|center_vertical"
+            android:padding="10dp"/>
+
+    <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:id="@+id/radioGroup">
+
+        <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Today?"
+                android:id="@+id/todayStart_radio"
+                android:layout_gravity="left|center_vertical"
+                android:padding="10dp"/>
+
+        <RadioButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Tomorrow?"
+                android:id="@+id/tomorrowStart_radio"
+                android:layout_gravity="left|center_vertical"
+                android:padding="10dp"/>
+    </RadioGroup>
+
 </LinearLayout>
