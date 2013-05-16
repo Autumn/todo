@@ -1,0 +1,1 @@
+ant debug && adb uninstall uguu.gao.wafu.todo && adb install bin/todo-debug.apk
